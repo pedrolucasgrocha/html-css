@@ -1,0 +1,61 @@
+@charset "UTF-8";
+:root{
+    --cor0: #6C9DF7;
+    --cor1: #226CF5;
+    --cor2: #1B55C2;
+    --cor3: #385180;
+    --cor4: #103475;
+}
+*{
+    margin: 0px;
+}
+header{
+    background-color: white;
+    width: 100%;
+}
+body{
+    background-color: var(--cor0);
+}
+h1{
+    font-family: 'Amaranth', sans-serif;
+    color: #D0D1AC;
+    font-size: 45px;
+    padding: 20px;
+}
+
+h1::before{
+    content: ' {Título} ';
+    color: white;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #F0C400;
+}
+nav{
+    font-family:'Roboto', sans-serif;
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    
+}
+main{
+    background-color: whitesmoke;
+    margin: auto;
+    max-width: 800px;
+    min-width: 320px;
+}
+div.video{
+    background-color: rgb(107, 106, 106);
+    position: relative;
+    padding-bottom: 56.2%;
+    margin: 0px;
+}
+iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
