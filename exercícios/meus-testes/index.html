@@ -3,32 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site para testes de conhecimento</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Press+Start+2P&family=Righteous&family=Roboto&family=Rubik+Dirt&display=swap" rel="stylesheet">
-    <title>Testes com links internos e externos no meu site</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body>      
     <header>
-        <h1>Seja bem-vindo ao meu site de apresentação</h1>
+        <h1><mark>N</mark>itro<mark>H</mark>ard Garage</h1>
+        <p>Mudando o conceito das oficinas </p>
         <nav>
             <a href="#">Home</a>
-            <a href="#">Notícias</a>
-            <a href="#">Curiosidades</a>
-            <a href="">Fale Conosco</a>
+            <a href="#">Sobre nós</a>
+            <a href="#video">Projetos</a>
+            <a href="#servicos">Nossos serviços</a>
         </nav>
     </header>
-    
     <main>
-        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-        <img src="imagens/editavel.png" alt="">
-        <p>Esse é o link para acesso à <a href="pagina002.html" rel="next">página 2</a></p>
-        <p>Esse é o link para acesso à <a href="imagens/pagimagens.html" rel="next">página de imagens</a> do meu site</p>
-        
+        <article>
+            <h2>Paixão brasileira</h2>
+            <div>
+                <img src="images/teste.jpg" alt="Foto carro" id="carro">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa at assumenda animi officia, totam eum! Quod voluptate rem dicta illum hic aliquam. Sed deserunt, officiis inventore reiciendis tempora vel illo! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sint molestias saepe autem explicabo fugit cumque praesentium repellendus voluptatum at. Optio vitae repudiandae esse dolores inventore deleniti. Molestias, dolor dicta!</p>
+            </div>
+            <h2>Projeto Red Shark:</h2>
+            <div id="video">
+               
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fKNdoxRld34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
+        <aside id="servicos">
+            <h3>Nosso serviços principais</h3>
+            <ul>
+                <li>Troca de óleo</li>
+                <li>Pastilhas</li>
+                <li>Pneus de competição</li>
+                <li>Remap</li>
+                <li>Escapameto</li>
+                <li>Funilaria e pintura</li>
+            </ul>
+        </aside>
     </main>
+    <footer>
+        <p>Desenvolvido por <a href="#">
+            <mark>N</mark>itro<mark>H</mark>ard Garage
+        </a>&copy;, todos os direiros reservados </p>
+    </footer>
 </body>
 </html>
