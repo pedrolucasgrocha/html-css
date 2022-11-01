@@ -52,6 +52,10 @@ section{
     font-size: 3.5vw;  
 }
 
+section > p{
+    padding-bottom: 2em;
+}
+
 section.color{
     background-color: white;
     color: black;
@@ -59,6 +63,8 @@ section.color{
 
 section.img{
     background-color: black;
+    text-shadow: 2px 2px 0px black;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.699);
 }
 
 section#img1{
