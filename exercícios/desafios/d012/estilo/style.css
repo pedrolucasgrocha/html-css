@@ -1,12 +1,21 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Sriracha&display=swap');
+:root{
+    --font-especial: 'Passion One', cursive;
+    --font-poesia: 'Sriracha', cursive;
+    --font-padrao: 'Roboto Slab', serif;
+}
+
 *{
     margin: 0px;
     padding: 0px;
 }
+
 html, body{
     min-height: 100vh;
     background-color: wheat;
-    color: white;    
+    color: white;
+    font-family: var(--font-padrao);    
 }
 
 header{
@@ -18,7 +27,8 @@ header{
 
 header > h1{
     font-variant: small-caps;
-    font-size: 4em;
+    font-size: 10vw;
+    font-family: var(--font-especial);
 }
 
 header > p{
@@ -30,6 +40,7 @@ header a, footer a{
     text-decoration: none;
     font-weight: bolder;
 }
+
 header a:hover, footer a:hover{
     text-decoration: underline;
 }
@@ -37,7 +48,8 @@ header a:hover, footer a:hover{
 section{
     padding: 10vh 0px 10vh 2em;
     line-height: 2em;
-    
+    font-family: var(--font-poesia);
+    font-size: 3.5vw;  
 }
 
 section.color{
@@ -61,7 +73,9 @@ section#img2{
 
 section.img > p{
     background-color: rgba(0, 0, 0, 0.479);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
     
 }
 
