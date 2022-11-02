@@ -20,270 +20,173 @@
             margin: 0px;
         }
         h1{
-            font-variant: small-caps;
-            color: rgb(255, 254, 254);
-            text-shadow: -1px 0px 5px black;
-            background-image: linear-gradient(to right, gray, transparent);
-            padding: 30px;
             text-align: center;
-            font-size: 6vw;
-            text-decoration: underline;
             font-family: var(--fonte-especial);
-        }
-        section{
-            height: 80vh;
-            position: relative;
-        }
-        section.comum{
-            background-color: rgba(250, 235, 215, 0.651);
-        }
-        section.comum > table{
-            position: absolute;
-            border-collapse: collapse;
-            width: 40vw;
-            height: 10vh;
-            left: 50%;
-            top: 30%;
-            transform: translate(-50%,-50%);
-                                
-        }
-        section.imagem{
-            background-color: gray;
-        }
-        section.imagem > table{
-            position: absolute;
-            border-collapse: collapse;
-            width: 40vw;
-            height: 10vh;
-            left: 10%;
-            top: 10%;                               
-        }
-        section#imagem1{
-            background: url(imagens/background001.jpg) center right no-repeat fixed;
-            background-size: cover;
-        }
-        section#imagem2{
-            background: url(imagens/background002.jpg) center right no-repeat fixed;
-            background-size: cover;
-        }
-        th{
-            background-color: rgba(161, 161, 161, 0.904);
-            border-collapse: collapse;
-            border: 1px solid black;
             font-variant: small-caps;
-            padding: 10px;
+            background-color: lightblue;
+            color: white;
+            text-shadow: -1px 3px 8px black;
+            padding: 30px;
+            font-size: 3em;
+            margin-bottom: 30px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;/*POSIÇIONAMENTO RELATIVO NA TABELA*/
+            margin-left: 50px;
+            margin-bottom: 30px;
+        }
+        thead > tr > th{
+            position: sticky;/*STICK QUER DIZER "COLAVEL, GRUDAVEL"*/
+            top: -1px; /*PARA QUE NÃO TENHA UMA BARRA MÍNIMA NO TOPO*/
+            background-color: rgb(27, 161, 0); /*PARA QUE O BACKGROUP ACOMPANHE O TEXTO*/
+            
         }
         td{
-            background-color: rgba(116, 116, 116, 0.096);
-            border-collapse: collapse;
             border: 1px solid black;
-            padding: 10px;
-            background-color: white;
+            padding: 5px;
         }
-        footer{
-            background-image: linear-gradient(to right, gray, transparent);
-            color: rgb(255, 254, 254);
-            text-shadow: -1px 0px 5px black;
+        td.num{
+            text-align: right;
+        }
+        th{
+            background-color: rgb(27, 161, 0);
+            border: 1px solid black;
+            padding: 5px;
+        }
+        tfoot td{
+            background-color: rgb(27, 161, 0);
+            font-weight: bold;
             text-align: center;
-            font-size: 1.2em;
-            padding: 10px;
         }
+        
+
+
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
-    <section class="comum">
+    <section>
         <table>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 100px;">População</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>São Paulo</td>
-                    <td>41 262 199</td>
+                    <td class="num">41 262 199</td>
                 </tr>
                 <tr>
                     <td>Minas Gerais</td>
-                    <td>19 597 330</td>
+                    <td class="num">19 597 330</td>
                 </tr>
                 <tr>
                     <td>São Paulo</td>
-                    <td>41 262 199</td>
+                    <td class="num">41 262 199</td>
                 </tr>
                 <tr>
                     <td>Minas Gerais</td>
-                    <td>19 597 330</td>
+                    <td class="num">19 597 330</td>
                 </tr>
                 <tr>
                     <td>São Paulo</td>
-                    <td>41 262 199</td>
+                    <td class="num">41 262 199</td>
                 </tr>
                 <tr>
                     <td>Minas Gerais</td>
-                    <td>19 597 330</td>
+                    <td class="num">19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
                 </tr>
             </tbody>
             <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</th>
+                    <td>000000</td>
+                </tr>
             </tfoot>
         </table>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo facere nostrum, fugit sed quidem ullam quod maxime distinctio voluptatum impedit minima veritatis dicta corporis eligendi ut architecto laborum aperiam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi itaque enim laborum excepturi sequi architecto velit doloremque dolores tenetur ab! Voluptates quibusdam accusamus accusantium nisi. Autem, aliquid nulla? Similique, aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus, eaque, deserunt harum mollitia nisi adipisci a cum itaque rerum ratione delectus. Modi, doloremque rem sint reiciendis distinctio deserunt suscipit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse minus sapiente obcaecati tempore harum! Inventore fugiat doloremque, deserunt at quidem iste labore, eligendi, velit odio consequuntur accusantium error dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sapiente ad, repudiandae incidunt delectus enim dolorem numquam molestias ab nisi voluptates eaque, vero nostrum. Voluptatum natus non quia officia quod?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo facere nostrum, fugit sed quidem ullam quod maxime distinctio voluptatum impedit minima veritatis dicta corporis eligendi ut architecto laborum aperiam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi itaque enim laborum excepturi sequi architecto velit doloremque dolores tenetur ab! Voluptates quibusdam accusamus accusantium nisi. Autem, aliquid nulla? Similique, aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus, eaque, deserunt harum mollitia nisi adipisci a cum itaque rerum ratione delectus. Modi, doloremque rem sint reiciendis distinctio deserunt suscipit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse minus sapiente obcaecati tempore harum! Inventore fugiat doloremque, deserunt at quidem iste labore, eligendi, velit odio consequuntur accusantium error dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sapiente ad, repudiandae incidunt delectus enim dolorem numquam molestias ab nisi voluptates eaque, vero nostrum. Voluptatum natus non quia officia quod?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo facere nostrum, fugit sed quidem ullam quod maxime distinctio voluptatum impedit minima veritatis dicta corporis eligendi ut architecto laborum aperiam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi itaque enim laborum excepturi sequi architecto velit doloremque dolores tenetur ab! Voluptates quibusdam accusamus accusantium nisi. Autem, aliquid nulla? Similique, aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus, eaque, deserunt harum mollitia nisi adipisci a cum itaque rerum ratione delectus. Modi, doloremque rem sint reiciendis distinctio deserunt suscipit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse minus sapiente obcaecati tempore harum! Inventore fugiat doloremque, deserunt at quidem iste labore, eligendi, velit odio consequuntur accusantium error dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sapiente ad, repudiandae incidunt delectus enim dolorem numquam molestias ab nisi voluptates eaque, vero nostrum. Voluptatum natus non quia officia quod?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo facere nostrum, fugit sed quidem ullam quod maxime distinctio voluptatum impedit minima veritatis dicta corporis eligendi ut architecto laborum aperiam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi itaque enim laborum excepturi sequi architecto velit doloremque dolores tenetur ab! Voluptates quibusdam accusamus accusantium nisi. Autem, aliquid nulla? Similique, aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus, eaque, deserunt harum mollitia nisi adipisci a cum itaque rerum ratione delectus. Modi, doloremque rem sint reiciendis distinctio deserunt suscipit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse minus sapiente obcaecati tempore harum! Inventore fugiat doloremque, deserunt at quidem iste labore, eligendi, velit odio consequuntur accusantium error dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sapiente ad, repudiandae incidunt delectus enim dolorem numquam molestias ab nisi voluptates eaque, vero nostrum. Voluptatum natus non quia officia quod?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo facere nostrum, fugit sed quidem ullam quod maxime distinctio voluptatum impedit minima veritatis dicta corporis eligendi ut architecto laborum aperiam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi itaque enim laborum excepturi sequi architecto velit doloremque dolores tenetur ab! Voluptates quibusdam accusamus accusantium nisi. Autem, aliquid nulla? Similique, aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus, eaque, deserunt harum mollitia nisi adipisci a cum itaque rerum ratione delectus. Modi, doloremque rem sint reiciendis distinctio deserunt suscipit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse minus sapiente obcaecati tempore harum! Inventore fugiat doloremque, deserunt at quidem iste labore, eligendi, velit odio consequuntur accusantium error dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sapiente ad, repudiandae incidunt delectus enim dolorem numquam molestias ab nisi voluptates eaque, vero nostrum. Voluptatum natus non quia officia quod?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo facere nostrum, fugit sed quidem ullam quod maxime distinctio voluptatum impedit minima veritatis dicta corporis eligendi ut architecto laborum aperiam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi itaque enim laborum excepturi sequi architecto velit doloremque dolores tenetur ab! Voluptates quibusdam accusamus accusantium nisi. Autem, aliquid nulla? Similique, aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus, eaque, deserunt harum mollitia nisi adipisci a cum itaque rerum ratione delectus. Modi, doloremque rem sint reiciendis distinctio deserunt suscipit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse minus sapiente obcaecati tempore harum! Inventore fugiat doloremque, deserunt at quidem iste labore, eligendi, velit odio consequuntur accusantium error dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sapiente ad, repudiandae incidunt delectus enim dolorem numquam molestias ab nisi voluptates eaque, vero nostrum. Voluptatum natus non quia officia quod?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo facere nostrum, fugit sed quidem ullam quod maxime distinctio voluptatum impedit minima veritatis dicta corporis eligendi ut architecto laborum aperiam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi itaque enim laborum excepturi sequi architecto velit doloremque dolores tenetur ab! Voluptates quibusdam accusamus accusantium nisi. Autem, aliquid nulla? Similique, aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusamus, eaque, deserunt harum mollitia nisi adipisci a cum itaque rerum ratione delectus. Modi, doloremque rem sint reiciendis distinctio deserunt suscipit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse minus sapiente obcaecati tempore harum! Inventore fugiat doloremque, deserunt at quidem iste labore, eligendi, velit odio consequuntur accusantium error dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sapiente ad, repudiandae incidunt delectus enim dolorem numquam molestias ab nisi voluptates eaque, vero nostrum. Voluptatum natus non quia officia quod?</p>
     </section>
-    <section class="imagem" id="imagem1">
-        <table>
-            <thead>
-                <tr>
-                    <th>Estado</th>
-                    <th>População</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>São Paulo</td>
-                    <td>41 262 199</td>
-                </tr>
-                <tr>
-                    <td>Minas Gerais</td>
-                    <td>19 597 330</td>
-                </tr>
-                <tr>
-                    <td>São Paulo</td>
-                    <td>41 262 199</td>
-                </tr>
-                <tr>
-                    <td>Minas Gerais</td>
-                    <td>19 597 330</td>
-                </tr>
-                <tr>
-                    <td>São Paulo</td>
-                    <td>41 262 199</td>
-                </tr>
-                <tr>
-                    <td>Minas Gerais</td>
-                    <td>19 597 330</td>
-                </tr>
-            </tbody>
-            <tfoot>
-            </tfoot>
-        </table>
-    </section>
-    <section class="comum">
-        <table>
-            <thead>
-                <tr>
-                    <th>Estado</th>
-                    <th>População</th>
-                </tr>
-            </thead>
-           <tbody>
-                <tr>
-                    <td>São Paulo</td>
-                    <td>41 262 199</td>
-                </tr>
-                <tr>
-                    <td>Minas Gerais</td>
-                    <td>19 597 330</td>
-                </tr>
-                <tr>
-                    <td>São Paulo</td>
-                    <td>41 262 199</td>
-                </tr>
-                <tr>
-                    <td>Minas Gerais</td>
-                    <td>19 597 330</td>
-                </tr>
-                <tr>
-                    <td>São Paulo</td>
-                    <td>41 262 199</td>
-                </tr>
-                <tr>
-                    <td>Minas Gerais</td>
-                    <td>19 597 330</td>
-                </tr>
-            </tbody>
-            <tfoot>
-            </tfoot>
-        </table>
-    </section>
-    <section class="imagem" id="imagem2">
-        <table>
-            <thead>
-                <tr>
-                    <th>Estado</th>
-                    <th>População</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>São Paulo</td>
-                    <td>41 262 199</td>
-                </tr>
-                <tr>
-                    <td>Minas Gerais</td>
-                    <td>19 597 330</td>
-                </tr>
-                <tr>
-                    <td>São Paulo</td>
-                    <td>41 262 199</td>
-                </tr>
-                <tr>
-                    <td>Minas Gerais</td>
-                    <td>19 597 330</td>
-                </tr>
-                <tr>
-                    <td>São Paulo</td>
-                    <td>41 262 199</td>
-                </tr>
-                <tr>
-                    <td>Minas Gerais</td>
-                    <td>19 597 330</td>
-                </tr>
-            </tbody>
-            <tfoot>
-            </tfoot>
-        </table>
-    </section>
-    <section class="comum">
-        <table>
-            <thead>
-                <tr>
-                    <th>Estado</th>
-                    <th>População</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>São Paulo</td>
-                    <td>41 262 199</td>
-                </tr>
-                <tr>
-                    <td>Minas Gerais</td>
-                    <td>19 597 330</td>
-                </tr>
-                <tr>
-                    <td>São Paulo</td>
-                    <td>41 262 199</td>
-                </tr>
-                <tr>
-                    <td>Minas Gerais</td>
-                    <td>19 597 330</td>
-                </tr>
-                <tr>
-                    <td>São Paulo</td>
-                    <td>41 262 199</td>
-                </tr>
-                <tr>
-                    <td>Minas Gerais</td>
-                    <td>19 597 330</td>
-                </tr>
-            </tbody>
-            <tfoot>
-            </tfoot>
-        </table>
-    </section>
-    <footer>
-        Site criado como desmonstração de conhecimentos
-    </footer>
 </body>
 </html>
