@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        @charset 'UTF-8';
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        :root{
+            --fonte-especial:'Roboto Slab', serif;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        h1{
+            font-variant: small-caps;
+            color: rgb(255, 254, 254);
+            text-shadow: -1px 0px 5px black;
+            background-image: linear-gradient(to right, gray, transparent);
+            padding: 30px;
+            text-align: center;
+            font-size: 6vw;
+            text-decoration: underline;
+            font-family: var(--fonte-especial);
+        }
+        section{
+            height: 80vh;
+            position: relative;
+        }
+        section.comum{
+            background-color: rgba(250, 235, 215, 0.651);
+        }
+        section.comum > table{
+            position: absolute;
+            border-collapse: collapse;
+            width: 40vw;
+            height: 10vh;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%,-50%);
+                                
+        }
+        section.imagem{
+            background-color: gray;
+        }
+        section.imagem > table{
+            position: absolute;
+            border-collapse: collapse;
+            width: 40vw;
+            height: 10vh;
+            left: 10%;
+            top: 10%;                               
+        }
+        section#imagem1{
+            background: url(imagens/background001.jpg) center right no-repeat fixed;
+            background-size: cover;
+        }
+        section#imagem2{
+            background: url(imagens/background002.jpg) center right no-repeat fixed;
+            background-size: cover;
+        }
+        th{
+            background-color: rgba(161, 161, 161, 0.904);
+            border-collapse: collapse;
+            border: 1px solid black;
+            font-variant: small-caps;
+            padding: 10px;
+        }
+        td{
+            background-color: rgba(116, 116, 116, 0.096);
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: white;
+        }
+        footer{
+            background-image: linear-gradient(to right, gray, transparent);
+            color: rgb(255, 254, 254);
+            text-shadow: -1px 0px 5px black;
+            text-align: center;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <section class="comum">
+        <table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </section>
+    <section class="imagem" id="imagem1">
+        <table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </section>
+    <section class="comum">
+        <table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+           <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </section>
+    <section class="imagem" id="imagem2">
+        <table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </section>
+    <section class="comum">
+        <table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>19 597 330</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </section>
+    <footer>
+        Site criado como desmonstração de conhecimentos
+    </footer>
+</body>
+</html>
