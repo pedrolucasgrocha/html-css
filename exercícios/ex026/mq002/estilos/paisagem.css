@@ -3,7 +3,8 @@
 /* Configurações paisagem(deitada)*/
 
 body{
-    background: url(../imagens/cev-landscape.jpg) no-repeat;
+    background: url(../imagens/cev-landscape.jpg) left bottom no-repeat fixed;
+    background-size: contain;
 }
 
 
