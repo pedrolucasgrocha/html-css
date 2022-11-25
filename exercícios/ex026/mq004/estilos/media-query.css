@@ -1,12 +1,32 @@
 @charset "UTF-8";
 
 /*Todas as midias*/
+/*----------------------------------------------Impressão----------------------------------------*/
+@media print{ 
+    *{
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
 
-@media print{ /*Impressão*/
+    }
+    main{
+        border: 1px solid black;
+    
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#desktop{display: none;}
+    img#tv{display: none;}
 
+    main::after{
+        content: ' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut perferendis corrupti nesciunt quibusdam reiciendis velit, excepturi adipisci ab deleniti eius laboriosam esse nobis saepe cupiditate, nisi consequatur odit doloribus tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi, quam vero, eveniet culpa eos natus itaque ut mollitia eum alias, laboriosam fugit tempore et delectus voluptatum cupiditate? Eos, dignissimos?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus temporibus quibusdam nostrum et commodi eveniet adipisci, tenetur laboriosam explicabo distinctio autem facilis labore, cum numquam exercitationem perferendis ipsa dolor quae!';
+        font-size: 0.5em;
+        color: black;
+        
+    }
 }
-
-@media screen and (min-width: 768px) and (max-width: 991px){ /*Tablets*/
+/*----------------------------------------------Tablets----------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 991px){ 
     body{
         background: black url(../imagens/back-tablet.jpg) top left no-repeat;
         background-size: cover;
@@ -18,14 +38,11 @@
     img#desktop{display: none;}
     img#tv{display: none;}
 }
-
-@media screen and (min-width: 992px) and (max-width: 1999px){ /*Desktops*/
+/*------------------------------------------Desktops--------------------------------------------*/
+@media screen and (min-width: 992px) and (max-width: 1999px){ 
     body{
         background: black url(../imagens/back-pc.jpg) top left no-repeat;
         background-size: cover;
-    }
-    main > p::after{
-        content:'Teste';
     }
 
     img#phone{display: none;}
@@ -34,8 +51,8 @@
     img#desktop{display: block;}
     img#tv{display: none;}
 }
-
-@media screen and (min-width: 1200px){ /*Televisores*/
+/*------------------------------------------Televisores--------------------------------------------*/
+@media screen and (min-width: 1200px){ 
     body{
         background: black url(../imagens/back-tv.jpg) top left no-repeat;
         background-size: cover;
